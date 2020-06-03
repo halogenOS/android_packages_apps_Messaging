@@ -21,14 +21,6 @@
     <!-- Show emoticons -->
     <string name="show_emoticons_pref_title">Přístup k emotikonám</string>
     <string name="show_emoticons_pref_summary">Zobrazit klávesu emotikony na klávesnici</string>
-    <!-- Audio Library Tab for MMS attachments -->
-    <string name="mediapicker_galleryChooserDescription_cm">Vyberte obrázky nebo videa z tohoto zařízení</string>
-    <string name="mediapicker_audioListChooserDescription">Vyberte audio soubory z tohoto zařízení</string>
-    <string name="mediapicker_gallery_image_item_attachment_too_large">Nelze připojit video. Maximální velikost zprávy překročena.</string>
-    <string name="mediapicker_audio_list_title">Vyberte audio</string>
-    <string name="mediapicker_audio_list_item_selected_content_description">Vybrané audio</string>
-    <string name="mediapicker_audio_list_item_unselected_content_description">Klepnutím vyberte</string>
-    <string name="mediapicker_audio_list_title_selection">Vybráno: <xliff:g id="COUNT">%d</xliff:g></string>
     <!-- Mark message as read -->
     <string name="notification_mark_as_read">Označit jako přečtené</string>
     <!-- Notification channel -->
