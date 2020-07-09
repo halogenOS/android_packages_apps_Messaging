@@ -19,10 +19,10 @@
     <string name="swipe_to_delete_conversation_pref_title">Potiahnutím vymazať</string>
     <string name="swipe_to_delete_conversation_pref_summary">Potiahnite prstom vpravo pre vymazanie konverzácie</string>
     <!-- Show emoticons -->
-    <string name="show_emoticons_pref_title">Emoticons access</string>
-    <string name="show_emoticons_pref_summary">Show the emoticons key on the keyboard</string>
+    <string name="show_emoticons_pref_title">Prístup k emotikonám</string>
+    <string name="show_emoticons_pref_summary">Zobraziť klávesu pre emotikony na klávesnici</string>
     <!-- Mark message as read -->
-    <string name="notification_mark_as_read">Mark as read</string>
+    <string name="notification_mark_as_read">Označiť ako prečítané</string>
     <!-- Notification channel -->
-    <string name="notification_channel_messages_title">Messages</string>
+    <string name="notification_channel_messages_title">Správy</string>
 </resources>
