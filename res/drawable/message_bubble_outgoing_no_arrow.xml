@@ -16,5 +16,6 @@
 -->
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <solid android:color="@color/color_filter_base_color" />
-    <corners android:radius="28dp" />
+    <corners android:bottomRightRadius="@dimen/msg_bubble_corner_radius" android:bottomLeftRadius="@dimen/msg_bubble_corner_radius" 
+                android:topLeftRadius="@dimen/msg_bubble_corner_radius" android:topRightRadius="0dp"/> 
 </shape>
