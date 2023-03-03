@@ -8,6 +8,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
 
-    <solid android:color="@color/compose_send_text_background_color" />
-    <corners android:radius="28dp" />
+    <solid android:color="@color/msg_bubble_input_bg" />
+    <corners android:radius="100dp" />
 </shape>
