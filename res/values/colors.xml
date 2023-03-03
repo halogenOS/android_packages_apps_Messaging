@@ -64,7 +64,7 @@
     <color name="conversation_edge_effect">#9d9d9d</color>
     <color name="compose_message_send_color">@color/lineage_accent</color>
     <color name="compose_message_send_color_pressed">#999999</color>
-    <color name="message_bubble_color_outgoing">#ffffffff</color>
+    <color name="message_bubble_color_outgoing">@*android:color/system_accent1_100</color>
     <color name="message_error_bubble_color_incoming">#e2e2e2</color>
     <color name="message_audio_button_color_incoming">#ffffffff</color>
     <color name="message_bubble_color_selected">@*android:color/system_accent3_300</color>
@@ -76,6 +76,7 @@
 
     <!-- Activity background color -->
     <drawable name="class_zero_background">#7f040000</drawable>
+    <color name="msg_bubble_input_bg">@*android:color/system_neutral1_0</color>
     <color name="window_background">@*android:color/system_neutral1_50</color>
 
     <color name="contact_avatar_default_background">#d2d2d2</color>

@@ -195,5 +195,8 @@
     <dimen name="directory_header_padding_top">18dp</dimen>
     <dimen name="directory_header_padding_bottom">8dp</dimen>
     <dimen name="directory_header_text_size">14sp</dimen>
+    
+    <!-- Messages bubble corner radius -->
+    <dimen name="msg_bubble_corner_radius">22dp</dimen>
 
 </resources>

@@ -111,6 +111,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:src="@drawable/ic_attachment_dark"
+                        android:background="@drawable/msg_attachment_background"
                         android:minHeight="48dp"
                         android:minWidth="48dp"
                         android:paddingTop="@dimen/compose_message_attachment_padding_topBottom"
@@ -120,6 +121,7 @@
                     <com.android.messaging.ui.PlainTextEditText
                         android:id="@+id/compose_message_text"
                         style="@style/ConversationComposeSendText"
+                        android:layout_marginStart="8dp"
                         android:layout_height="wrap_content"
                         android:layout_width="0dp"
                         android:layout_weight="1"
