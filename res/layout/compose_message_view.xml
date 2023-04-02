@@ -114,6 +114,7 @@
                         android:background="@drawable/msg_attachment_background"
                         android:minHeight="48dp"
                         android:minWidth="48dp"
+                        android:layout_marginStart="12dp"
                         android:paddingTop="@dimen/compose_message_attachment_padding_topBottom"
                         android:paddingBottom="@dimen/compose_message_attachment_padding_topBottom"
                         android:contentDescription="@string/attachMediaButtonContentDescription" />
@@ -121,7 +122,7 @@
                     <com.android.messaging.ui.PlainTextEditText
                         android:id="@+id/compose_message_text"
                         style="@style/ConversationComposeSendText"
-                        android:layout_marginStart="8dp"
+                        android:layout_marginHorizontal="12dp"
                         android:layout_height="wrap_content"
                         android:layout_width="0dp"
                         android:layout_weight="1"
@@ -156,6 +157,7 @@
                         android:id="@+id/self_send_icon"
                         android:layout_width="@dimen/conversation_message_contact_icon_size"
                         android:layout_height="@dimen/conversation_message_contact_icon_size"
+                        android:layout_marginEnd="4dp"
                         android:importantForAccessibility="no"
                         app:iconSize="normal"
                         app:reveal="true"
@@ -167,6 +169,7 @@
                         android:src="@drawable/ic_send_light"
                         android:background="@drawable/send_arrow_background"
                         android:contentDescription="@string/sendButtonContentDescription"
+                        android:layout_marginEnd="4dp"
                         android:visibility="gone" />
                 </FrameLayout>
 

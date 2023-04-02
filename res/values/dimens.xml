@@ -42,8 +42,8 @@
     <dimen name="message_text_top_padding">10dp</dimen>
     <dimen name="message_text_left_right_padding">14dp</dimen>
     <dimen name="message_padding_default">18dp</dimen>
-    <dimen name="message_padding_same_author">2dp</dimen>
-    <dimen name="message_metadata_top_padding">4dp</dimen>
+    <dimen name="message_padding_same_author">6dp</dimen>
+    <dimen name="message_metadata_top_padding">6dp</dimen>
     <dimen name="message_audio_attachment_padding">12dp</dimen>
 
     <dimen name="mediapicker_default_chooser_height">215dp</dimen>
@@ -52,13 +52,13 @@
     <dimen name="compose_message_chip_height">36dp</dimen>
     <dimen name="compose_message_chip_padding">3dp</dimen>
     <dimen name="compose_message_fields_horizontal_margin">16dp</dimen>
-    <dimen name="compose_message_font_size">16sp</dimen>
+    <dimen name="compose_message_font_size">14sp</dimen>
     <dimen name="compose_message_attachment_padding_sides">0dp</dimen>
     <dimen name="compose_message_attachment_padding_topBottom">10dp</dimen>
     <dimen name="compose_message_chips_view_max_height">133dp</dimen>
     <dimen name="compose_message_subject_left_padding">52dp</dimen>
     <dimen name="compose_message_subject_right_padding">64dp</dimen>
-    <dimen name="compose_message_subject_top_padding">4dp</dimen>
+    <dimen name="compose_message_subject_top_padding">6dp</dimen>
     <dimen name="compose_message_subject_bottom_padding">6dp</dimen>
     <dimen name="compose_message_subject_cancel_top_offset">-12dp</dimen>
     <dimen name="compose_message_subject_cancel_left_margin">12dp</dimen>
