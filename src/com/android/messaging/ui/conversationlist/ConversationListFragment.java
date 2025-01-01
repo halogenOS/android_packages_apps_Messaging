@@ -220,7 +220,7 @@ public class ConversationListFragment extends Fragment implements ConversationLi
 
         mStartNewConversationButton = (ImageView) rootView.findViewById(
                 R.id.start_new_conversation_button);
-        if (mArchiveMode) {
+        if (mArchiveMode || mForwardMessageMode) {
             mStartNewConversationButton.setVisibility(View.GONE);
         } else {
             mStartNewConversationButton.setVisibility(View.VISIBLE);
