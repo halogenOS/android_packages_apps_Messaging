@@ -17,6 +17,7 @@
 <com.android.messaging.ui.conversation.ComposeMessageView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/message_compose_view_container"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -110,6 +111,10 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:src="@drawable/ic_attachment_dark"
+                        android:background="@drawable/msg_attachment_background"
+                        android:minHeight="48dp"
+                        android:minWidth="48dp"
+                        android:layout_marginStart="12dp"
                         android:paddingTop="@dimen/compose_message_attachment_padding_topBottom"
                         android:paddingBottom="@dimen/compose_message_attachment_padding_topBottom"
                         android:contentDescription="@string/attachMediaButtonContentDescription" />
@@ -117,11 +122,12 @@
                     <com.android.messaging.ui.PlainTextEditText
                         android:id="@+id/compose_message_text"
                         style="@style/ConversationComposeSendText"
+                        android:layout_marginHorizontal="12dp"
                         android:layout_height="wrap_content"
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_gravity="center"
-                        android:background="@drawable/msg_bubble_input"
+                        android:background="@drawable/msg_bubble_input_rounded"
                         android:hint="@string/compose_message_view_hint_text"
                         android:imeOptions="actionSend|flagNoEnterAction|flagNoExtractUi" />
 
@@ -151,6 +157,7 @@
                         android:id="@+id/self_send_icon"
                         android:layout_width="@dimen/conversation_message_contact_icon_size"
                         android:layout_height="@dimen/conversation_message_contact_icon_size"
+                        android:layout_marginEnd="4dp"
                         android:importantForAccessibility="no"
                         app:iconSize="normal"
                         app:reveal="true"
@@ -162,6 +169,7 @@
                         android:src="@drawable/ic_send_light"
                         android:background="@drawable/send_arrow_background"
                         android:contentDescription="@string/sendButtonContentDescription"
+                        android:layout_marginEnd="4dp"
                         android:visibility="gone" />
                 </FrameLayout>
 
