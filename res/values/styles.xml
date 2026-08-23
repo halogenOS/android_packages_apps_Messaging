@@ -43,6 +43,7 @@
     <style name="LaunchTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
          <item name="colorPrimary">@color/action_bar_background_color</item>
          <item name="colorPrimaryDark">@color/action_bar_background_color_dark</item>
+         <item name="android:elegantTextHeight">true</item>
     </style>
 
     <style name="BugleTheme.ConversationActivity"
@@ -58,6 +59,7 @@
     </style>
 
     <style name="BugleTheme.DialogActivity" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="android:elegantTextHeight">true</item>
     </style>
 
     <style name="BugleTheme.ConversationListActivity" parent="BugleTheme">
