@@ -18,6 +18,7 @@ package com.android.messaging.ui;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.PendingIntent;
+import android.app.role.RoleManager;
 import android.appwidget.AppWidgetManager;
 import android.content.ActivityNotFoundException;
 import android.content.ClipData;
@@ -27,7 +28,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Point;
 import android.graphics.Rect;
-import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.ContactsContract.Contacts;
@@ -302,7 +302,7 @@ public class UIIntentsImpl extends UIIntents {
         Assert.isTrue(MediaScratchFileProvider.isMediaScratchSpaceUri(vcardUri));
         final Intent intent = new Intent();
         intent.setAction(Intent.ACTION_VIEW);
-        intent.setDataAndType(vcardUri, ContentType.TEXT_VCARD.toLowerCase());
+        intent.setDataAndType(vcardUri, ContentType.TEXT_X_VCARD.toLowerCase());
         intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
         startExternalActivity(context, intent);
     }
@@ -451,16 +451,6 @@ public class UIIntentsImpl extends UIIntents {
     }
 
     @Override
-    public Intent getRingtonePickerIntent(final String title, final Uri existingUri,
-            final Uri defaultUri, final int toneType) {
-        return new Intent(RingtoneManager.ACTION_RINGTONE_PICKER)
-                .putExtra(RingtoneManager.EXTRA_RINGTONE_TYPE, toneType)
-                .putExtra(RingtoneManager.EXTRA_RINGTONE_TITLE, title)
-                .putExtra(RingtoneManager.EXTRA_RINGTONE_EXISTING_URI, existingUri)
-                .putExtra(RingtoneManager.EXTRA_RINGTONE_DEFAULT_URI, defaultUri);
-    }
-
-    @Override
     public PendingIntent getPendingIntentForLowStorageNotifications(final Context context) {
         final TaskStackBuilder taskStackBuilder = TaskStackBuilder.create(context);
         final Intent conversationListIntent = getConversationListActivityIntent(context);
@@ -508,9 +498,8 @@ public class UIIntentsImpl extends UIIntents {
 
     @Override
     public Intent getChangeDefaultSmsAppIntent(final Activity activity) {
-        final Intent intent = new Intent(Telephony.Sms.Intents.ACTION_CHANGE_DEFAULT);
-        intent.putExtra(Telephony.Sms.Intents.EXTRA_PACKAGE_NAME, activity.getPackageName());
-        return intent;
+        RoleManager roleManager = activity.getSystemService(RoleManager.class);
+        return roleManager.createRequestRoleIntent(RoleManager.ROLE_SMS);
     }
 
     @Override
