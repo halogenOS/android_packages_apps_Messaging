@@ -100,7 +100,7 @@ public class BlockedParticipantsFragment extends Fragment
     public void onBlockedParticipantsCursorUpdated(Cursor cursor) {
         mAdapter.swapCursor(cursor);
         if (mAdapter.getCount() == 0) {
-            requireActivity().finish();
+            getActivity().finish();
         }
     }
 }
